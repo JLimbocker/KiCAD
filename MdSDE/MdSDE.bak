@@ -1,0 +1,383 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Coded_Switch SW?
+U 1 1 56A00216
+P 2100 4650
+F 0 "SW?" H 2200 5000 50  0000 C CNN
+F 1 "Coded_Switch" H 2100 4301 50  0000 C CNN
+F 2 "" H 2100 4650 60  0000 C CNN
+F 3 "" H 2100 4650 60  0000 C CNN
+	1    2100 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 4400 2    60   Input ~ 0
+toPin
+Text GLabel 2700 4600 2    60   Input ~ 0
+Source1
+Text GLabel 2700 4700 2    60   Input ~ 0
+Source2
+Text GLabel 2700 4800 2    60   Input ~ 0
+Source3
+Text GLabel 2700 4900 2    60   Input ~ 0
+Source4
+$Comp
+L SPST SW?
+U 1 1 56A00364
+P 3900 4700
+F 0 "SW?" H 3900 4800 50  0000 C CNN
+F 1 "SPST" H 3900 4600 50  0000 C CNN
+F 2 "" H 3900 4700 60  0000 C CNN
+F 3 "" H 3900 4700 60  0000 C CNN
+	1    3900 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 56A003AC
+P 4300 4700
+F 0 "SW?" H 4300 4800 50  0000 C CNN
+F 1 "SPST" H 4300 4600 50  0000 C CNN
+F 2 "" H 4300 4700 60  0000 C CNN
+F 3 "" H 4300 4700 60  0000 C CNN
+	1    4300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 56A003E4
+P 4700 4700
+F 0 "SW?" H 4700 4800 50  0000 C CNN
+F 1 "SPST" H 4700 4600 50  0000 C CNN
+F 2 "" H 4700 4700 60  0000 C CNN
+F 3 "" H 4700 4700 60  0000 C CNN
+	1    4700 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 56A00420
+P 5100 4700
+F 0 "SW?" H 5100 4800 50  0000 C CNN
+F 1 "SPST" H 5100 4600 50  0000 C CNN
+F 2 "" H 5100 4700 60  0000 C CNN
+F 3 "" H 5100 4700 60  0000 C CNN
+	1    5100 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 56A00460
+P 3900 5500
+F 0 "C?" H 3925 5600 50  0000 L CNN
+F 1 "0.1u" H 3925 5400 50  0000 L CNN
+F 2 "" H 3938 5350 30  0000 C CNN
+F 3 "" H 3900 5500 60  0000 C CNN
+	1    3900 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 56A004BC
+P 4300 5500
+F 0 "C?" H 4325 5600 50  0000 L CNN
+F 1 "0.1u" H 4325 5400 50  0000 L CNN
+F 2 "" H 4338 5350 30  0000 C CNN
+F 3 "" H 4300 5500 60  0000 C CNN
+	1    4300 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 56A00524
+P 4700 5500
+F 0 "C?" H 4725 5600 50  0000 L CNN
+F 1 "0.1u" H 4725 5400 50  0000 L CNN
+F 2 "" H 4738 5350 30  0000 C CNN
+F 3 "" H 4700 5500 60  0000 C CNN
+	1    4700 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 56A0056C
+P 5100 5500
+F 0 "C?" H 5125 5600 50  0000 L CNN
+F 1 "0.1u" H 5125 5400 50  0000 L CNN
+F 2 "" H 5138 5350 30  0000 C CNN
+F 3 "" H 5100 5500 60  0000 C CNN
+	1    5100 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 5200 3900 5350
+Wire Wire Line
+	4300 5200 4300 5350
+Wire Wire Line
+	4700 5200 4700 5350
+Wire Wire Line
+	5100 5200 5100 5350
+Wire Wire Line
+	3900 5650 4300 5650
+Wire Wire Line
+	4300 5650 4500 5650
+Wire Wire Line
+	4500 5650 4700 5650
+Wire Wire Line
+	4700 5650 5100 5650
+Connection ~ 4300 5650
+Connection ~ 4700 5650
+$Comp
+L GND #PWR?
+U 1 1 56A00774
+P 4500 5750
+F 0 "#PWR?" H 4500 5500 50  0001 C CNN
+F 1 "GND" H 4500 5600 50  0000 C CNN
+F 2 "" H 4500 5750 60  0000 C CNN
+F 3 "" H 4500 5750 60  0000 C CNN
+	1    4500 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5750 4500 5650
+Connection ~ 4500 5650
+Text GLabel 3900 4200 1    60   Input ~ 0
+Source1
+Text GLabel 4300 4200 1    60   Input ~ 0
+Source2
+Text GLabel 4700 4200 1    60   Input ~ 0
+Source3
+Text GLabel 5100 4200 1    60   Input ~ 0
+Source4
+Text Notes 900  5900 0    60   ~ 0
+Routing Brick Sub-circuit
+Text Notes 5050 3250 0    60   ~ 0
+Component Brick Sub-circuit
+Wire Wire Line
+	2100 2800 2100 2950
+Wire Wire Line
+	2500 2800 2500 2950
+Wire Wire Line
+	2800 2800 2800 2950
+Wire Wire Line
+	2800 2400 2800 2500
+Wire Wire Line
+	2500 2400 2500 2500
+Wire Wire Line
+	2100 2500 2100 2400
+Text GLabel 1300 1400 0    60   Input ~ 0
+Pin
+Text GLabel 6150 1550 2    60   Input ~ 0
+Source
+Connection ~ 2100 1400
+Connection ~ 5750 1550
+Wire Wire Line
+	4400 950  4150 950 
+Wire Wire Line
+	5750 950  5400 950 
+Wire Wire Line
+	3950 1550 4550 1550
+Wire Wire Line
+	3950 1700 3950 1550
+Wire Wire Line
+	3950 2950 3950 2700
+Wire Wire Line
+	2800 2950 3950 2950
+Wire Wire Line
+	2500 2950 2800 2950
+Wire Wire Line
+	2400 2950 2500 2950
+Wire Wire Line
+	2100 2950 2400 2950
+Connection ~ 4150 1400
+Wire Wire Line
+	4150 950  4150 1400
+Wire Wire Line
+	4150 1400 4800 1400
+Wire Wire Line
+	3850 1400 4150 1400
+Wire Wire Line
+	5750 1550 5750 950 
+Wire Wire Line
+	5750 1550 6150 1550
+Wire Wire Line
+	5050 1550 5750 1550
+Connection ~ 2800 2950
+$Comp
+L POT RV?
+U 1 1 569FF5F9
+P 4800 1550
+F 0 "RV?" H 4800 1450 50  0000 C CNN
+F 1 "POT" H 4800 1550 50  0000 C CNN
+F 2 "" H 4800 1550 60  0000 C CNN
+F 3 "" H 4800 1550 60  0000 C CNN
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1400
+Connection ~ 2400 2950
+Wire Wire Line
+	2400 3150 2400 2950
+$Comp
+L GND #PWR?
+U 1 1 569FF3B7
+P 2400 3150
+F 0 "#PWR?" H 2400 2900 50  0001 C CNN
+F 1 "GND" H 2400 3000 50  0000 C CNN
+F 2 "" H 2400 3150 60  0000 C CNN
+F 3 "" H 2400 3150 60  0000 C CNN
+	1    2400 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 1400
+Connection ~ 2500 2950
+Wire Wire Line
+	2800 1400 2850 1400
+Wire Wire Line
+	2500 1400 2800 1400
+Wire Wire Line
+	2100 1400 2500 1400
+Wire Wire Line
+	1300 1400 2100 1400
+$Comp
+L C C?
+U 1 1 569FF1C3
+P 2100 2650
+F 0 "C?" H 2125 2750 50  0000 L CNN
+F 1 "10u" H 2125 2550 50  0000 L CNN
+F 2 "" H 2138 2500 30  0000 C CNN
+F 3 "" H 2100 2650 60  0000 C CNN
+	1    2100 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 569FF197
+P 2500 2650
+F 0 "C?" H 2525 2750 50  0000 L CNN
+F 1 "1u" H 2525 2550 50  0000 L CNN
+F 2 "" H 2538 2500 30  0000 C CNN
+F 3 "" H 2500 2650 60  0000 C CNN
+	1    2500 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 569FF14A
+P 2800 2650
+F 0 "C?" H 2825 2750 50  0000 L CNN
+F 1 "0.1u" H 2825 2550 50  0000 L CNN
+F 2 "" H 2838 2500 30  0000 C CNN
+F 3 "" H 2800 2650 60  0000 C CNN
+	1    2800 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 569FF120
+P 2100 1900
+F 0 "SW?" H 2100 2000 50  0000 C CNN
+F 1 "SPST" H 2100 1800 50  0000 C CNN
+F 2 "" H 2100 1900 60  0000 C CNN
+F 3 "" H 2100 1900 60  0000 C CNN
+	1    2100 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 569FF0FC
+P 2500 1900
+F 0 "SW?" H 2500 2000 50  0000 C CNN
+F 1 "SPST" H 2500 1800 50  0000 C CNN
+F 2 "" H 2500 1900 60  0000 C CNN
+F 3 "" H 2500 1900 60  0000 C CNN
+	1    2500 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 569FF0D7
+P 2800 1900
+F 0 "SW?" H 2800 2000 50  0000 C CNN
+F 1 "SPST" H 2800 1800 50  0000 C CNN
+F 2 "" H 2800 1900 60  0000 C CNN
+F 3 "" H 2800 1900 60  0000 C CNN
+	1    2800 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 569FF070
+P 3350 1400
+F 0 "SW?" H 3350 1500 50  0000 C CNN
+F 1 "SPST" H 3350 1300 50  0000 C CNN
+F 2 "" H 3350 1400 60  0000 C CNN
+F 3 "" H 3350 1400 60  0000 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 569FF054
+P 4900 950
+F 0 "SW?" H 4900 1050 50  0000 C CNN
+F 1 "SPST" H 4900 850 50  0000 C CNN
+F 2 "" H 4900 950 60  0000 C CNN
+F 3 "" H 4900 950 60  0000 C CNN
+	1    4900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 569FF021
+P 3950 2200
+F 0 "SW?" H 3950 2300 50  0000 C CNN
+F 1 "SPST" H 3950 2100 50  0000 C CNN
+F 2 "" H 3950 2200 60  0000 C CNN
+F 3 "" H 3950 2200 60  0000 C CNN
+	1    3950 2200
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
