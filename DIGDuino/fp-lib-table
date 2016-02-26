@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Resonators)(type KiCad)(uri "$(KIPRJMOD)/Resonators.pretty")(options "")(descr ""))
+  (lib (name SOP)(type KiCad)(uri "$(KIPRJMOD)/SOP.pretty")(options "")(descr ""))
+  (lib (name Switches)(type KiCad)(uri "$(KIPRJMOD)/Switches.pretty")(options "")(descr ""))
+)
